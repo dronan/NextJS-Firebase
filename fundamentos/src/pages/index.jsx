@@ -1,13 +1,18 @@
-import Link from "next/link";
+import Navegador from "../components/Navegador";
 
 export default function Inicio() {
   // deve retornar null caso não tenha um conteudo definido no return
   return (
-            <div>
-                <ul>
-                    <li><Link href="/estiloso">Estiloso</Link></li>
-                    <li><Link href="/exemplo">Exemplo</Link></li>
-                </ul>
+            <div style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexWrap: "wrap",
+                height: "100vh"
+            }}>
+                    <Navegador destino="/estiloso" texto="Estiloso" cor="red" />
+                    <Navegador destino="/exemplo" texto="Exemplo" />
+                    <Navegador destino="/jsx" texto="JSX" />
             </div>
         )
 }
