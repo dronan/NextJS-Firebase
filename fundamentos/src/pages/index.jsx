@@ -18,6 +18,7 @@ export default function Inicio() {
                     <Navegador destino="/doisparametros/filial-x/12345" texto="Navegacao 02.1" cor="blue" />
                     <Navegador destino="/estado" texto="Componente com estado" cor="pink" />
                     <Navegador destino="/integracao_1" texto="Componente de integracao" cor="violet" />
+                    <Navegador destino="/estatico" texto="Conteudo estatico" cor="ffqva" />
             </div>
         )
 }
